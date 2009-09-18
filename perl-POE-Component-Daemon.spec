@@ -8,13 +8,13 @@
 Summary:	POE::Component::Daemon - Handles all the housework for a daemon.
 #Summary(pl.UTF-8):	
 Name:		perl-POE-Component-Daemon
-Version:	0.1006
+Version:	0.1100
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	b6ba32dfcaf612b12af181e0e83e9a67
+# Source0-md5:	55fb1d94c18c314b043befb2c9fa6d37
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/POE-Component-Daemon/
 BuildRequires:	perl-devel >= 1:5.8.0
