@@ -5,16 +5,16 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	POE
 %define	pnam	Component-Daemon
-Summary:	POE::Component::Daemon - Handles all the housework for a daemon.
-#Summary(pl.UTF-8):	
+Summary:	POE::Component::Daemon - Handles all the housework for a daemon
+#Summary(pl.UTF-8):
 Name:		perl-POE-Component-Daemon
-Version:	0.1100
+Version:	0.1300
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	55fb1d94c18c314b043befb2c9fa6d37
+# Source0-md5:	ceb684aa01237ce2eb884fdbf81b8370
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/POE-Component-Daemon/
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -27,28 +27,26 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Dealing with all the little details of a forking daemon can be annoying and
-hard.  POE::Component::Daemon encapsulates all the details into one place
-and (hopefully) gets them right.
+Dealing with all the little details of a forking daemon can be
+annoying and hard. POE::Component::Daemon encapsulates all the details
+into one place and (hopefully) gets them right.
 
-POE::Component::Daemon will deal with all the annoying details of creating
-and maintaining daemon processes.  It can detach from the console, handle
-pre-forking pools or post-forking (ie, fork on each request). It will also
-redirect STDERR to a log file if asked.
+POE::Component::Daemon will deal with all the annoying details of
+creating and maintaining daemon processes. It can detach from the
+console, handle pre-forking pools or post-forking (ie, fork on each
+request). It will also redirect STDERR to a log file if asked.
 
 POE::Component::Daemon also babysits child processes, handling their
-CHLD.  POE::Component::Daemon can also makes sure requests don't take
-to long.  If they do, it will try to get rid of them.  See /BABYSITING
+CHLD. POE::Component::Daemon can also makes sure requests don't take
+to long. If they do, it will try to get rid of them. See /BABYSITING
 below.
 
-POE::Component::Daemon does not handle listening on sockets.  That is up to
-your code.
+POE::Component::Daemon does not handle listening on sockets. That is
+up to your code.
 
-Like all of POE, POE::Component::Daemon works cooperatively.  It is up your
-code to tell POE::Component::Daemon when it is time to fork, block incoming
-requests when approriate and so on.
-
-
+Like all of POE, POE::Component::Daemon works cooperatively. It is up
+your code to tell POE::Component::Daemon when it is time to fork,
+block incoming requests when approriate and so on.
 
 # %description -l pl.UTF-8
 # TODO
