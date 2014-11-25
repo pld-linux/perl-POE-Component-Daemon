@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	POE
 %define	pnam	Component-Daemon
+%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Component::Daemon - Handles all the housework for a daemon
-#Summary(pl.UTF-8):
 Name:		perl-POE-Component-Daemon
 Version:	0.1300
 Release:	1
@@ -15,8 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/POE/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ceb684aa01237ce2eb884fdbf81b8370
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/POE-Component-Daemon/
+URL:		http://search.cpan.org/dist/POE-Component-Daemon/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -47,9 +45,6 @@ up to your code.
 Like all of POE, POE::Component::Daemon works cooperatively. It is up
 your code to tell POE::Component::Daemon when it is time to fork,
 block incoming requests when approriate and so on.
-
-# %description -l pl.UTF-8
-# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
