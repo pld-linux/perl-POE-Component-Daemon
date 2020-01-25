@@ -4,7 +4,6 @@
 
 %define	pdir	POE
 %define	pnam	Component-Daemon
-%include	/usr/lib/rpm/macros.perl
 Summary:	POE::Component::Daemon - Handles all the housework for a daemon
 Name:		perl-POE-Component-Daemon
 Version:	0.1300
