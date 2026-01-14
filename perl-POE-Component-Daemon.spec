@@ -7,7 +7,7 @@
 Summary:	POE::Component::Daemon - Handles all the housework for a daemon
 Name:		perl-POE-Component-Daemon
 Version:	0.1300
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
